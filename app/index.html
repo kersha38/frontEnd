@@ -3,6 +3,30 @@
 <head>
     <meta charset="UTF-8">
     <title>Title</title>
+    <style>
+        /*estilos css*/
+        #tablita{
+            border-style: solid;
+            border-width: 4px;
+            border-color: black;
+        }
+        /*mediante etiqueta*/
+        td,th{
+            border-style: solid;
+            border-width: 4px;
+            border-color: firebrick;
+        }
+
+        /*mediante clases*/
+        .borde-cafe{
+            border-color: brown;
+        }
+        .borde-azul{
+            border-color: dodgerblue;
+        }
+
+    </style>
+
 </head>
 <body>
 
@@ -44,7 +68,7 @@ algo mas</pre>
 
 <h2>Tablas</h2>
 
-<table>
+<table border="3" class="borde-azul">
     <tr>
         <th>Nombre</th>
         <th>Apellido</th>
@@ -61,7 +85,7 @@ algo mas</pre>
 <h2>Formularios</h2>
 <button>hola muno</button>
 
-<form action="http://localhost:3000/Auth/emitir"
+<form action="http://localhost:3000/Auth/emitirToken"
 method="post">
 
     <label for="usuario">Usuario</label>
@@ -73,6 +97,11 @@ method="post">
     <button>Por defecto boton contiene submit</button>
 </form>
 
+<h2>Iframes</h2>
+
+<iframe src="http://www.google.com" frameborder="0" width="600" height="800">
+
+</iframe>
 </body>
 
 </html>
